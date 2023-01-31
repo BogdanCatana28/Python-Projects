@@ -1,0 +1,18 @@
+This Application is a budget management tool.
+
+It has a user table for registration and login management.
+In order to use the App the user must register using the "register" label in the first appeared frame.
+After pressing it, you will have to fill all the presented fields. 
+It will be modeled using the RegsiterModel and sent to DBManager to be store in the "userTable" table.
+after a successful registration you will be able to click on the login button and insert the appropriate credentials (which will be read from "userTable" table) and use the App. 
+
+In addition to registration and login management, the App will expose 3 different functionalities (and eliminate the previous ones).
+
+First, the budget functionality can be used by inserting the budget amount by an input which will appear after clicking on the "Set Budget" button.
+It will be modeled using the BudgetModel and sent to DBManager to be store in the "budgetGoalTable" table.
+
+Secondly, the transaction functionality can be used by inserting the transaction amount by an input which will appear after clicking on the "Add Transaction" button.
+It will be modeled using the TransactionModel and sent to DBManager to be store in the "transactionsTable".
+
+Furthermore, In order to show the Pie Chart report the user must have some transaction and a budget initialized in the DB.
+The Application will read the data from DB in the "transactionsTable" and "storeTable" and be presented in a different window.
